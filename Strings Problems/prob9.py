@@ -27,7 +27,7 @@ will be 21.
 
 def count(n):
   if n==1: return "1"
-  if n==2: return "21"
+  if n==2: return "11"
   s = "11"
   for i in range(3,n+1):
     t = ""
