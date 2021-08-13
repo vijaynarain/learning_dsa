@@ -1,4 +1,4 @@
-#here we are gone to implement the stack
+#here we are going to implement the stack
 
 from collections import deque
 
