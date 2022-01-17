@@ -37,3 +37,11 @@ def longPreSuf(s):
 if __name__ == "__main__":
   s = "abab"
   print(longPreSuf(s))
+
+"""
+Main Algo:- 
+1. It's basically a part of KMP algorithm
+2. it's a pre prossesing part of KMP
+3. 
+"""
+

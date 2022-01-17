@@ -1,7 +1,38 @@
-input_str = ['h','e','l','l','o']
+def presuf(p):
+    lps = [0] * len(p)
+    i = 1
+    j = 0
+    while i < len(p):
+        if p[i] == p[j]:
+            lps[i] = j + 1
+            i += 1
+            j += 1
+        else:
+            if j == 0:
+              i += 1
+            j = lps[j - 1]
+            
+    print(lps)
+    return lps[-1]
 
-end = -1
-N = len(input_str)
-for i in range(1,N+1):
-  input_str[i-1],input_str[-i] = input_str[-i],input_str[i-1]
-print(input_str)
+
+print(presuf("aabaabaaa"))
+
+"""
+def lps(p):
+    lps = [0] * len(p)
+    i = 1
+    j = 0
+    while i < len(p):
+        if p[i] == p[j]:
+            lps[i] = j + 1
+            i += 1
+            j += 1
+        else:
+            lps[i] = 0
+            j = lps[j-1]
+            i += 1
+    print(lps)
+    print(j)
+    return lps[-1]
+"""
