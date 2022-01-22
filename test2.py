@@ -1,16 +1,4 @@
-def lps(p):
-    lps = [0] * len(p)
-    i = 1
-    j = 0
-    while i < len(p):
-        if p[i] == p[j]:
-            lps[i] = j + 1
-            i += 1
-            j += 1
-        else:
-            lps[i] = 0
-            j = lps[j-1]
-            i += 1
-    print(lps)
-    print(j)
-    return lps[-1]
+if number <= N:
+    increament = pow(10,math.floor(l/2))
+    rundupNum = str(math.floor(math.floor(int(int(N)/increament) + 1) * increament))
+    nextPalin(rundupNum)

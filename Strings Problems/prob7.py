@@ -19,7 +19,8 @@ Explanation: 5555..555 is not a valid
 ip address, as the middle two portions
 are missing.
 """
-
+#Old Code
+"""
 def isValid(s):
     #code here
     count = 0
@@ -46,8 +47,17 @@ def isValid(s):
         return 1
     else:
         return 0
-
-
+"""
+#New Code
+def isValid(s):
+    data = list((s.split('.')))
+    for i in range(len(data)):
+        if data[i].isalpha() or data[i] == "": return 0
+        if int(data[i]) >= 0 and int(data[i]) <= 255:
+            continue
+        else:
+            return 0
+    return 1
 
 
 if __name__ == "__main__":

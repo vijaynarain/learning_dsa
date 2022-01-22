@@ -20,7 +20,7 @@ reffrence video:- https://youtu.be/vTMXv-thazI
 """
 
 def longPreSuf(s):
-  A = [0 for i in range(len(s))]
+  A = [0] * len(s)
   j = 0;i = 1
   while i < len(s) :
       if s[i] == s[j]:
@@ -42,6 +42,5 @@ if __name__ == "__main__":
 Main Algo:- 
 1. It's basically a part of KMP algorithm
 2. it's a pre prossesing part of KMP
-3. 
 """
 
