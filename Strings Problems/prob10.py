@@ -43,3 +43,11 @@ if __name__ == "__main__":
   K = 2
   print(longestKSubstr())
 
+"""
+def longestKSubstr(S):
+    table = dict(Counter(S))
+    #print(table)
+    length,max_lenght = 0,0
+    i,j = 0,0
+    n = len(S)
+"""

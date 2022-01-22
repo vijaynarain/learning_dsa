@@ -42,7 +42,7 @@ Main Algo Explanation:-
 2. second you have to store the first parenthesis in a new list
 3. then you have to append the open parenthesis in the new list i.e. "( { ["
 4. if you got close parenthesis than you have to check that is this parenthesis is closing the last value append i.e. ( == ) 
-5. if this is true than pop the last value append using .pop() 
+5. if this is true than pop the last value using .pop() 
 6. if this is wrong than return false
 7. finally after reading all the value, now you have to check that is this our new list is empty or not. because
 if out parenthesis is balanced than our list have to empty and if our list is not empty than our parenthesis is not balanced and return false

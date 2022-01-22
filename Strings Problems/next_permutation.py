@@ -30,7 +30,7 @@ def nextPermutation(N,arr):
     return arr
 
 if __name__ == '__main__':
-    arr = [1, 2, 3]
+    arr = [1, 2, 3, 6, 5, 4]
     N = len(arr)
     print(arr)
     print(nextPermutation(N,arr))

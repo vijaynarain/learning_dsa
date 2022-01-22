@@ -5,10 +5,10 @@ def numberic(data,text):
   output = ""
   for i in range(n):
     if text[i] == ' ':
-      output = output + '0'
+      output = output + '0' #for space in text we add 0 in output
     else:
-      position = ord(text[i]) - ord('A')
-      output = output + data[position]
+      position = ord(text[i]) - ord('A') #to get position in data
+      output = output + data[position] 
       
   return output
 
