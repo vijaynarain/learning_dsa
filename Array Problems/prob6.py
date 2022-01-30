@@ -19,15 +19,12 @@ Coefficient of Range : 0.5
 
 a = [15, 16, 10, 9, 6, 7, 17]
 max = a[0]
+min = a[0]
 
 for i in range(len(a)):
   if a[i] > max:
     max = a[i]
-
-min = a[0]
-
-for i in range(len(a)):
-  if a[i] < min:
+  elif a[i] < min:
     min = a[i]
 
 Range = max - min

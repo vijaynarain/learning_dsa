@@ -11,6 +11,7 @@ Input:  arr[] = {-5, -2, 5, 2, 4, 7, 1, 8, 0, -8}
 output: arr[] = {-5, 5, -2, 2, -8, 4, 7, 1, 8, 0}
 """
 
+#old code
 def number_arrange():
   a.sort()
 
@@ -27,7 +28,24 @@ def number_arrange():
 
   return a
 
-
+#new code//working in this code (Recursion code)
+"""
+b = []
+def number_arrange(i,j,a):
+  while a[j] > 0 and j < len(a) - 1:
+    j += 1
+  while a[i] < 0 and i < len(a) - 1:
+    i += 1
+  b.append(a[i])
+  b.append(a[j])
+  if j < len(a) - 1 and i < len(a) - 1:
+      number_arrange(i+1, j+1, a)
+  a = b
+  return a
+    
+print(number_arrange(i=0,j=0,a=[-5, -2, 5, 2, 4, 7, 1, 8, 0, -8]))
+"""
+    
 
 if __name__ == "__main__":
   a = [-5, -2, 5, 2, 4, 7, 1, 8, 0, -8]

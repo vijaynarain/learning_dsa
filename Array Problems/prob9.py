@@ -15,3 +15,5 @@ last = a[-1]
 a.pop(-1)
 a.insert(0,last)
 print(a)
+
+#Note:- it can best done by linkedlist

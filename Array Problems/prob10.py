@@ -12,6 +12,8 @@ Output: 4
 Explanation: The missing number from 1 to 5 is 4
 """
 
+#old code
+"""
 def getMissingNumber(A):
  
     # Compute XOR of all the elements in the list
@@ -24,7 +26,16 @@ def getMissingNumber(A):
         xor = xor ^ i
  
     return xor
- 
+"""
+
+#new code
+def getMissingNumber(A):
+  count = 1
+  for i in range(len(A)):
+    if count in A:
+      count += 1
+    else:
+      return count
  
 if __name__ == '__main__':
  

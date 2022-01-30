@@ -9,7 +9,7 @@ class LinkedList:
 
   def insert_in_begining(self,data):
     node = Node(data,self.head)
-    self.head = node
+    self.head = node      
 
   def print(self):
     if self.head is None:
@@ -78,6 +78,7 @@ class LinkedList:
 
 if __name__ == "__main__":
   mylist = LinkedList()
+  mylist.insert_in_begining(0)
   mylist.insert_values([10,20,30,40])
   print("length",mylist.get_length())
   mylist.print()
