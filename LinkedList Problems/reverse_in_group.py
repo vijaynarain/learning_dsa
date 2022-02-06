@@ -6,7 +6,17 @@ Output: 4 2 2 1 8 7 6 5
 Explanation: 
 The first 4 elements 1,2,2,4 are reversed first 
 and then the next 4 elements 5,6,7,8. Hence, the 
-resultant linked list is 4->2->2->1->8->7->6->5."""
+resultant linked list is 4->2->2->1->8->7->6->5.
+
+Input:
+LinkedList: 1->2->3->4->5
+K = 3
+Output: 3 2 1 5 4 
+Explanation: 
+The first 3 elements are 1,2,3 are reversed 
+first and then elements 4,5 are reversed.Hence, 
+the resultant linked list is 3->2->1->5->4.
+"""
 
 class Node:
   def __init__(self,data=None,next=None):
@@ -74,7 +84,7 @@ class LinkedList:
 
 l = LinkedList()
 l.insert_at_start(1)
-l.insert_list([2,2,3,4,5,6,7,8])
+l.insert_list([2,2,4,5,6,7,8])
 l.print()
 l.head = l.reverse(l.head,k=4)
 l.print()
