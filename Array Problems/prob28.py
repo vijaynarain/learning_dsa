@@ -1,4 +1,6 @@
 """
+*Important:-
+
 Print a given matrix in spiral form
 
 Given a 2D array, print it in spiral form. See the following examples.
@@ -22,7 +24,7 @@ Explanation :The output is matrix in spiral format.
 """
 
 def printdata(arr, i, j, m, n):
- 
+    #m=Row, n=Collumn 
     # If i or j lies outside the matrix
     if (i >= m or j >= n):
         return

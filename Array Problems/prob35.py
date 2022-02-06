@@ -17,6 +17,7 @@ Output: Missing = 5, Repeating = 1
 def findingNumber():
   csum = 0
   rsum = n
+  repeat = 0
   for j in range(n):
       rsum += j
       csum += a[j]

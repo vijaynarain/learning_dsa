@@ -1,3 +1,4 @@
+from collections import Counter
 """
 Majority Element
 
@@ -16,7 +17,8 @@ Explanation: There is no element whose frequency is
 greater than the half of the size of the array size.
 """
 
-
+#old code
+"""
 def majorityCheck():
     fq = len(a) / 2
     for i in range(len(a)):
@@ -30,7 +32,15 @@ def majorityCheck():
             )
 
     return ("No Majority Element")
+"""
 
+#new code
+def majorityCheck():
+  times = Counter(a)
+  for i in times:
+    if times[i] > int(len(a)/2):
+      return "Majority Element",i
+  return "No Majority Element"
 
 if __name__ == "__main__":
     a = [3, 3, 4, 2, 4, 4, 2, 4, 4]

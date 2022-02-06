@@ -26,18 +26,14 @@ def longConse():
         num+=1
       else:
         num = 1
-      if num > max:
+      if max < num:
         max = num
   return max
       
-        
-         
-
-  return num
 
 
 if __name__ == "__main__":
-  a = [36, 41, 56, 35, 44, 33, 34, 92, 43, 32, 42, 23, 45, 10, 2, 46]
+  a = [36, 41, 56, 35, 44, 33, 34, 92, 43, 32, 42]
   n = len(a)
   a.sort()
   print("the longest subsequence of consecutive elements =",longConse())

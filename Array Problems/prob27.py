@@ -26,7 +26,7 @@ def findOnesMax():
         if mv < num:
             mv = num
             mvr = i
-    print(f"Maximum value is {mv} in row {mvr}")
+    print(f"Maximum value is {mv} in row {mvr+1}")
 
 
 if __name__ == "__main__":

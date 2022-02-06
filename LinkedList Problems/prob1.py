@@ -26,6 +26,7 @@ class LinkedList:
 
 class Solution:
   def solve(self,A):
+    pass
 
 
 

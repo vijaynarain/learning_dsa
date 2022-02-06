@@ -22,7 +22,7 @@ def calculate():
     n = 1
     j = 2
     while True:
-        if i < len(a) - 1:
+        if i < len(a) - 1 and j < len(a):
             sum = a[i] + a[n] + a[j]
             if sum == num:
                 return (f"number = {a[i]} {a[n]} {a[j]}")
@@ -32,12 +32,17 @@ def calculate():
                 else:
                     n += 1
                     j = n + 1
-        elif n == len(a) - 1 and j == len(a):
-            i += 1
+        else:
+          if n == len(a) - 1 and j == len(a):
+            if i < len(a):
+              i += 1
+            else:
+              break
+    return False
 
 
 if __name__ == "__main__":
-    a = [3, 12, 4, 1, 6, 9]
+    a = [12, 3, 4, 1, 6, 9]
     num = 24
     print(f"Array = {a}")
     print(f"sum = {num}")

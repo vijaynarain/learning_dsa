@@ -51,8 +51,8 @@ def combinationUtil(arr, n, r, index, data, i):
  
 # Driver Code
 if __name__ == "__main__":
-    arr = [1, 2, 3, 4, 5]
-    r = 3
+    arr = [1, 2, 3, 4]
+    r = 2
     n = len(arr)
     printCombination(arr, n, r)
  

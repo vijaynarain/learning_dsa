@@ -1,4 +1,6 @@
 """
+*Important question !
+
 Given heights of n towers and a value k. We need to either increase or decrease the height of every tower by k (only once) where k > 0. The task is to minimize the difference between the heights of the longest and the shortest tower after modifications and output this difference.
 Examples: 
 
@@ -52,10 +54,12 @@ def max_min(a):
 def minimise_tower_diff():
   diff = max_min(a)
   for i in range(len(a)):
-    if diff-k >= a[i] + k:
-      a[i] = a[i] + k
+    #main algorithm {
+    if diff-k >= a[i] + k:  
+      a[i] = a[i] + k       
     else:
       a[i] = a[i] - k
+    #main algorithm }
   print(f"Tower Updated heights = {a}")
   tower_diff  = max_min(a)
   return tower_diff

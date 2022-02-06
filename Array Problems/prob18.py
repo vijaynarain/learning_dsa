@@ -17,7 +17,7 @@ Input: {-3, 2, 3, 1, 6}
 Output: false
 """
 
-def sum_zero_check():
+def sum_zero_check(a):
   for i in range(len(a)):
     j = i+1
     while j < len(a):
@@ -32,4 +32,4 @@ def sum_zero_check():
 
 if __name__ == "__main__":
   a = [-3, 2, 3, 1, 6]
-  print(sum_zero_check())
+  print(sum_zero_check(a))
