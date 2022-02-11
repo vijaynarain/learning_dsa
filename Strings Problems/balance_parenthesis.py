@@ -26,7 +26,7 @@ def ispar(x):
                         data.pop()
                     else:
                         return 'false'
-        if not data:
+        if data == []:
             return 'true'
         else:
             return 'false'

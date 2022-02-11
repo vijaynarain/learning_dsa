@@ -8,7 +8,7 @@ class Stack:
     self.container = deque()
 
   def push(self,val):
-    self.container.append(val)
+    return self.container.append(val)
 
   def pop(self):
     return self.container.pop()

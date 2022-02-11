@@ -5,9 +5,7 @@ def SelectionSort(a,n):
             if a[j] < a[min]:
                 min = j
         if min != i:
-            temp = a[i]
-            a[i] = a[min]
-            a[min] = temp 
+            a[i],a[min] = a[min],a[i]
     
     return a
 

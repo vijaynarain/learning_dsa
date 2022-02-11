@@ -1,5 +1,5 @@
 #in abstraction we have to use abstract class and method
-#in python this can be done with abc module
+#in python this can be done with "abc" module
 from abc import ABC
 
 #this is abstract class with abstract method

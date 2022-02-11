@@ -74,12 +74,6 @@ class LinkedList:
       head.next = self.reverse(temp,k)
 
     return prev
-    itr = prev
-    ilstr = ""
-    while itr:
-      ilstr += str(itr.data) + "->"
-      itr = itr.next
-    print(ilstr)
     
 
 l = LinkedList()

@@ -10,11 +10,11 @@ class Car:
 
 class Tesla(Car):
   def __init__(self):
-    #self.color = "blue"
+    self.color = "blue"
     self.gear = "auto"
 
 car1 = Tesla()
 car2 = Car()
-print(car2.color)
 print(car1.color)
+print(car2.color)
 

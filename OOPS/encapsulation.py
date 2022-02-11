@@ -32,7 +32,7 @@ class Car:
   def __init__(self):
     #default milege
     self.milege = 21
-    self.__milege = 21  #"_" means protechted 
+    self.__milege = 21  #"__" means protechted 
 
 #derived class
 class Tesla(Car):

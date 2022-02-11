@@ -41,7 +41,7 @@ def elements_check(arr1,arr2,arr3):
       n = arr3
   i = 0
   while i < len(n):
-    if n[i] in arr1 and n[i] and n[i] in arr2 and n[i] and arr3:
+    if n[i] in arr1 and n[i] in arr2 and n[i] in arr3:
       print(n[i])
     i += 1
       

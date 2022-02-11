@@ -7,7 +7,7 @@ def subseq(t,i,n,S):
         subseq(t,i+1,n,S)
         
 S = "abc"
-subseq("",0,len(S),S)
+subseq("",0,len(S),S) #(t=empty string,i = index,n = length of string,S = string itself)
 
 """
 Main Algo:- 

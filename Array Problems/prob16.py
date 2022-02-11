@@ -16,7 +16,7 @@ def checking():
   print(a[0],a[1],a[2])
 """
 
-#new code this have complexity than previous
+#new code this have less complexity than previous
 #this using Bubble sort algorithm
 def checking():
   n = len(a)
